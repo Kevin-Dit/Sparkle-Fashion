@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.dnone {
+  display: none;
+}
+
+.pencil-main {
+  background-color: #c4dcff;
+}
+.pencil p {
+  padding: 14px 0;
+  text-align: center;
+  font-size: 18px;
+  line-height: 21.09px;
+  font-weight: 400;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.slider img {
+  width: 100%;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider_description {
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  /* left: 10%; */
+  transform: translateY(-50%);
+}
+
+.slider_description .slider_text {
+  font-size: 18px;
+  font-weight: 700;
+  color: #4c4c4c;
+  line-height: 18px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.slider_description .slider_heading {
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
+  margin: 24px 0;
+}
+
+.slider_description .slider_subheading {
+  font-size: 18px;
+  font-weight: 400;
+  color: #4c4c4c;
+  line-height: 21.09px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/* Header */
+.header-main {
+  padding: 36px 0;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .header-logo h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 54px;
+  color: #0066ff;
+}
+.header .header-search .search-input {
+  width: 825px;
+}
+.header .header-search .search-input::placeholder {
+  color: #d2d2d2;
+}
+.header .search-form {
+  position: relative;
+}
+.header .search-submit {
+  position: absolute;
+  right: 0;
+  border: none;
+  background: #0066ff;
+  color: #ffffff;
+  padding: 13px 20px;
+  border-radius: 5px;
+}
+.header .header-account {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.header .header-account .account {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.acc-name {
+  font-family: "Nunito", sans-serif;
+  color: #696969;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.select-acc {
+  border: none;
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24.55px;
+}
+
+.favourites,
+.cart {
+  position: relative;
+  background-color: #c4dcff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 8px 9px;
+}
+
+.fav-tooltip,
+.cart-tooltip {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  font-size: 14px;
+  font-family: "Nunito", sans-serif;
+  border-radius: 50%;
+  padding: 0px 6px;
+  min-width: 20px;
+  min-height: 20px;
+  color: #ffffff;
+  background-color: #0066ff;
+}
+
+/* category */
+.categores-heading {
+  margin: 64px 0 30px 0;
+}
+.categores-heading h2 {
+  text-align: center;
+  font-size: 32px;
+  line-height: 37.5px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.category-main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.categories-top,
+.categories-bottom {
+  display: flex;
+  gap: 30px;
+}
+
+.category {
+  position: relative;
+}
+
+.category h2 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.category img {
+  width: 100%;
+}
+
+.header .header-search .search-input {
+  width: 600px;
+  border: 1px solid #c4dcff;
+  border-radius: 5px;
+  padding: 12px 90px 12px 34px;
+  background: url(./img/search.png) no-repeat;
+  background-position: 8px 8px;
+}
+
+.slick-next {
+  right: 25px;
+}
+.slick-next-arrow,
+.slick-prev-arrow {
+  position: absolute;
+  cursor: pointer;
+  top: 50%;
+  font-size: 18px;
+  z-index: 1;
+  background-color: #0066ff;
+  padding: 4px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.slick-next-arrow {
+  right: 20px;
+}
+.slick-prev-arrow {
+  left: 20px;
+}
+
+.slick-next-arrow:hover,
+.slick-prev-arrow:hover {
+  color: #ff0000;
+}
+
+.slick-dots {
+  bottom: 25px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #0066ff;
+  background-color: #0066ff;
+}
+.slick-dots li {
+  width: 15px;
+  height: 15px;
+}
+.slick-dots li button {
+  width: 15px;
+  height: 15px;
+  padding: 0;
+}
+.slick-dots li button:before {
+  width: 15px;
+  height: 15px;
+  font-size: 18px;
+  top: -2px;
+  left: -2px;
+  color: transparent;
+  border-radius: 50%;
+  border: 2px solid #0066ff;
+}
+
+/* card */
+.card {
+  width: 25%;
+  background-color: #f8f8f8;
+}
+.card-img {
+  width: 100%;
+}
+.card-content {
+  padding: 24px;
+}
+.brand-name {
+  color: #0066ff;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 21.09px;
+}
+.card-heading{
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 18px;
+  margin: 12px 0 16px 0
+}
+.reviews{
+  display: flex;
+  gap: 16px;
+  align-items: baseline;
+  margin-bottom: 24px;
+}
+.review-icon{
+  display: flex;
+  gap: 8px;
+}
+.total-reviews{
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.1px;
+}
+.fa-star {
+  color: #e3e3e3;
+  font-size: 18px;
+}
+
+.review-full {
+  color: #ffc700;
+}
+
+@media screen and (min-width: 1024px) {
+  .pencil p {
+    font-size: 16px;
+    padding: 10px 0;
+  }
+  .header .header-logo h1 {
+    font-size: 32px;
+  }
+
+  .header .header-search .search-input {
+    width: 350px;
+    font-size: 12px;
+    padding: 10px 60px 10px 34px;
+    background-position: 9px 8px;
+    background-size: 15px;
+  }
+  .header .search-submit {
+    padding: 10px 10px;
+  }
+
+  .favourites,
+  .cart {
+    padding: 8px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .header .header-logo h1 {
+    font-size: 40px;
+  }
+
+  .header .header-search .search-input {
+    width: 550px;
+    font-size: 14px;
+    padding: 12px 100px 12px 34px;
+    background-position: 10px 10px;
+    background-size: 17px;
+  }
+
+  .header .search-submit {
+    padding: 13px 24px;
+  }
+}
+@media screen and (min-width: 1440px) {
+}
+@media screen and (min-width: 1920px) {
+  .container {
+    padding: 0 150px;
+  }
+  .pencil p {
+    padding: 14px 0;
+  }
+  .header .header-search .search-input {
+    width: 825px;
+  }
+}
